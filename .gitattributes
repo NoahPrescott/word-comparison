@@ -1,0 +1,4 @@
+* text=auto eol=lf
+*-pubignore* export-ignore
+*_pubignore* export-ignore
+.firebaserc export-ignore

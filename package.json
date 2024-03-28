@@ -1,0 +1,30 @@
+{
+  "name": "jsPsychTemplate",
+  "version": "0.0.1",
+  "description": "Template serverless project for running online experiments using jsPsych, Firestore and Prolific",
+  "author": "Dae Houlihan <dev@daeh.info> (https://daeh.info)",
+  "license": "ISC",
+  "homepage": "https://github.com/daeh/jspsych-template#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daeh/jspsych-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/daeh/jspsych-template/issues"
+  },
+  "scripts": {
+    "deploy": "firebase deploy --only hosting",
+    "deploy-rules": "firebase deploy --only firestore:rules",
+    "update-deps": "yarn upgrade-interactive --latest && cd hosting && yarn upgrade-interactive --latest",
+    "release": "node scripts/releaseScript.mjs $PWD",
+    "releasecli": "zsh scripts/release.zsh $PWD",
+    "retrieve": "zsh scripts/retrieve.zsh $PWD"
+  },
+  "type": "module",
+  "source": "./hosting",
+  "devDependencies": {
+    "firebase-tools": "^13.0.2",
+    "readline-sync": "^1.4.10",
+    "shelljs": "^0.8.5"
+  }
+}

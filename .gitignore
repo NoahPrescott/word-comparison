@@ -1,0 +1,18 @@
+### auth files ###
+### excluded in .gitattributes
+.firebaserc
+
+### Runtime ###
+node_modules/
+.firebase/
+_build/
+_build.zip
+logs/
+./*.log
+
+### Editor directories and files ###
+# .vscode/
+!.vscode/
+# .idea/
+!.idea/
+.idea/workspace.xml

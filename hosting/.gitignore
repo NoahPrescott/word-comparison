@@ -1,0 +1,14 @@
+### auth files ###
+### excluded in .gitattributes
+src/databaseCred.ts
+src/prolificCred.ts
+
+### Runtime ###
+node_modules/
+dist/
+build/
+
+### Generated files ###
+eslint.config.js
+
+### Project ###
